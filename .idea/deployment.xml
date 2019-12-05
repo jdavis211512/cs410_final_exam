@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData">
+    <serverData>
+      <paths name="csmadison.dhcp.bsu.edu">
+        <serverdata>
+          <mappings>
+            <mapping deploy="home/jwdavis2/public_html/finalexam" local="$PROJECT_DIR$" web="/finalexam" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
