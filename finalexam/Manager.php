@@ -38,7 +38,7 @@ if (!empty($result)){
         }else{echo $r['AssignedTo'];}
         echo '<td>'.$r['Status'].'</td>';
         echo '<td>'.$r['changes'].'</td>';
-        echo '<input type="submit" value="submit">';
+        echo '<input type="submit" value="assign">';
         echo '</form>';
         $insert_query = "update Bugs set AssignedTo =:name, Status = Assigned where BugId =:bugid";
         $sql = $conn->prepare($insert_query);

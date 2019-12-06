@@ -61,7 +61,6 @@ error_reporting(E_ALL);
     <input type="submit" name="login" value="Login"/><br><br>
     <span class="error"><?php if(!empty($error)) foreach($error as $e) echo $e . "<br>"; ?></span>
 </form><br>
-<a href="createuser.php">New User</a>
 </body>
 </html>
 
