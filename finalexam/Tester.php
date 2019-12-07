@@ -24,7 +24,7 @@ $sql->execute();
         <option value="low">low</option>
     </select><br>
     describe the bug
-    <input name="description" type="text" size="300%">
+    <input name="description" type="textarea" size="300%">
     <input type="submit">
 </form>
 </body>

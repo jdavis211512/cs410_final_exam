@@ -16,7 +16,7 @@ error_reporting(E_ALL);
         {
             $username = trim($_POST['username']);
             $password = trim($_POST['password']);
-            $query = "select Password, Userid,Type from Users where Username=:username";
+            $query = "select Password,Type,Name from Users where Username=:username";
             $sql = $conn->prepare($query);
             $sql->bindValue("username", $username);
             $sql->execute();
@@ -29,7 +29,7 @@ error_reporting(E_ALL);
             {
                 if($user[0]['Password'] == sha1($password))
                 {
-                    $_SESSION['userid'] = $user[0]['Userid'];
+                    $_SESSION['Name'] = $user[0]['Name'];
                     $_SESSION['Type'] = $user[0]['Type'];
                     if ($user[0]['Type']==="Manager"){
                         header('Location:Manager.php');
